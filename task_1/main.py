@@ -1,6 +1,6 @@
 #Вариант 3
 
-list = [
+list = [ # Создаём список из шести строк
     "Солнце медленно клонилось к горизонту, окрашивая небо в оранжевые и розовые тона.",
     "Белый парусник медленно плыл по глади озера.",
     "Привет, мир!!!",
@@ -9,36 +9,37 @@ list = [
     "Это задание было сделано на Python"
 ]
 
-count_of_str_with_v = 0
+count_of_str_with_v = 0 #Создаём переменную ( количества строк с буквой "В" или "в") и присвайваем ей значение 0
 
-for i in list:
-    if "В" in list[0] or "в" in list[0]:
-        count_of_str_with_v += 1
-        break
+for i in list: # создаём цикл, который пробегается по списку
+    if "В" in list[0] or "в" in list[0]: # проверяем: если буква "В" или "в" содержится в первой из шести строк, то
+        count_of_str_with_v += 1 # счётчик + 1
+        break # выходим из цикла
 
-for i in list:
-    if "В" in list[1] or "в" in list[1]:
-        count_of_str_with_v += 1
-        break
+for i in list: # создаём цикл, который пробегается по списку
+    if "В" in list[1] or "в" in list[1]: # проверяем: если буква "В" или "в" содержится во второй из шести строк, то
+        count_of_str_with_v += 1 # счётчик + 1
+        break # выходим из цикла
 
-for i in list:
-    if "В" in list[2] or "в" in list[2]:
-        count_of_str_with_v += 1
-        break
+for i in list: # создаём цикл, который пробегается по списку
+    if "В" in list[2] or "в" in list[2]: # проверяем: если буква "В" или "в" содержится в третьей из шести строк, то
+        count_of_str_with_v += 1 # счётчик + 1
+        break # выходим из цикла
 
-for i in list:
-    if "В" in list[3] or "в" in list[3]:
-        count_of_str_with_v += 1
-        break
+for i in list: # создаём цикл, который пробегается по списку
+    if "В" in list[3] or "в" in list[3]: # проверяем: если буква "В" или "в" содержится в четвёртой из шести строк, то
+        count_of_str_with_v += 1 # счётчик + 1
+        break # выходим из цикла
 
-for i in list:
-    if "В" in list[4] or "в" in list[4]:
-        count_of_str_with_v += 1
-        break
+for i in list: # создаём цикл, который пробегается по списку
+    if "В" in list[4] or "в" in list[4]: # проверяем: если буква "В" или "в" содержится в пятой из шести строк, то
+        count_of_str_with_v += 1 # счётчик + 1
+        break # выходим из цикла
 
-for i in list:
-    if "В" in list[5] or "в" in list[5]:
-        count_of_str_with_v += 1
-        break
+for i in list: # создаём цикл, который пробегается по списку
+    if "В" in list[5] or "в" in list[5]: # проверяем: если буква "В" или "в" содержится в шестой из шести строк, то
+        count_of_str_with_v += 1 # счётчик + 1
+        break # выходим из цикла
 
-print("Количество строк с буквой 'в'(или 'В') = ", count_of_str_with_v)
+print("Количество строк с буквой 'в'(или 'В') = ", count_of_str_with_v) # выводим значиние переменной count_of_str_with_v
+
