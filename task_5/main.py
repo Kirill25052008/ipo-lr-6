@@ -1,33 +1,36 @@
-import random
+import random# Добавляем библиотеку рандом
 
-list_of_numbers = [i for i in range(0,25)]
+list_of_numbers = [i for i in range(0,25)]# Создаём список чисел размером 25 элементов
 
-count_of_positive_numbers = 0
-count_of_negative_numbers = 0
-count_of_zero_elements = 0
+count_of_positive_numbers = 0# Создаём переменнуё count_of_positive_numbers (количество положительных чисел) и присвайваем ей значение 0
+count_of_negative_numbers = 0# Создаём переменнуё count_of_negative_numbers (количество отрицательных чисел) и присвайваем ей значение 0
+count_of_zero_elements = 0# Создаём переменнуё count_of_zero_elements (количество нулей) и присвайваем ей значение 0
 
-max = 0
-min = 0
+max = 0# Создаём переменную max (максимальное значение) и присвайваем ей значение 0
+min = 0# Создаём переменную min (минимальное значение) и присвайваем ей значение 0
 
-for i in list_of_numbers:
-    i = random.randint(-50,50)
-    print(i)
+for i in list_of_numbers:# Создаём цикл, который будет пробигаться по списку, созданному ранее
+    i = random.randint(-50,50)# Записываем в элемент списка пандомное значение в диапазоне от -50 до 50
+    print(i)# Выводим этот рандомный элемент
 
-    if i > 0:
-        count_of_positive_numbers += 1
-    elif i < 0:
-        count_of_negative_numbers += 1
-    else:
-        count_of_zero_elements += 1  
+    if i > 0:# Если этот элемент > 0, то
+        count_of_positive_numbers += 1# В переменную count_of_positive_numbers добавляем один элемент
+    elif i < 0:# Если этот элемент < 0, то
+        count_of_negative_numbers += 1# В переменную count_of_negative_numbers добавляем один элемент
+    else:# Если этот элемент = 0, то
+        count_of_zero_elements += 1  # В переменную count_of_zero_elements добавляем один элемент
 
-    if i > max:
-        max = i
-    elif i < min:
-        min = i    
+    if i > max:# Если этот элемент больше переменной max, то
+        max = i# Переменной max присвайваем значение этой переменной
+    elif i < min:# Если этот элемент меньше переменной min, то
+        min = i# Переменной min присвайваем значение этой переменной
 
-print(f"Количество положительных элементов = {count_of_positive_numbers}")
-print(f"Количество отрицательных элементов = {count_of_negative_numbers}")
-print(f"Количество нулевых элементов = {count_of_zero_elements}")
-print("------------------------------------")
-print(f"Максимальное число = {max}")
-print(f"Минимальное число = {min}")
+print(f"Количество положительных элементов = {count_of_positive_numbers}")# Выводим количество положительных элементов
+print(f"Количество отрицательных элементов = {count_of_negative_numbers}")# Выводим количество отрицательных элементов
+print(f"Количество нулевых элементов = {count_of_zero_elements}")# Выводим количество нулевых элементов
+
+print("------------------------------------")# Выводим ------------------------------------
+
+print(f"Максимальное число = {max}")# Выводим максимальное число
+print(f"Минимальное число = {min}")# Выводим минимальное число
+
